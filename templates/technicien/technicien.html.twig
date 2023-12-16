@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} os technicien {% endblock %}
+
+{% block extrastyles %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <section class="header">
+        <img src="{{ asset('img/emploi2.jpg') }}" alt="Image 1">
+        <h1>Les ingenieur de Mira CNC</h1>
+    </section>
+    <section class="content">
+        <div class="text">
+            <p>
+                Nos techniciens hautement qualifiés sont les piliers de notre entreprise. Chez MIRA CNC, nous nous engageons à fournir les meilleurs professionnels du secteur pour répondre à vos besoins en matière de maintenance et d'optimisation de machines.
+                Nos techniciens sont soigneusement sélectionnés pour leur expertise technique, leur expérience pratique et leur passion pour leur métier. Ils sont constamment formés aux dernières avancées technologiques et aux meilleures pratiques de l'industrie, afin de vous offrir un service de qualité supérieure. Leur connaissance approfondie des machines-outils à commande numérique, de l'automatisme et de la robotique leur permet d'identifier rapidement les problèmes, de diagnostiquer les pannes et de mettre en œuvre des solutions efficaces. Leur précision, leur rigueur et leur attention aux détails garantissent des interventions de maintenance de haute qualité, minimisant ainsi les temps d'arrêt coûteux et assurant le bon fonctionnement de vos équipements. </p>
+        </div>
+        <div class="image">
+            <img class="image-cercle" src="{{ asset('img/emploi2.jpg') }}" alt="Image 2">
+        </div>
+    </section>
+    <section class="content">
+        <div class="image">
+            <img class="image-cercle" src="{{ asset('img/ingenieur.jpg') }}" alt="Image 3">
+        </div>
+        <div class="text">
+            <p> Au-delà de leurs compétences techniques, nos techniciens sont également reconnus pour leur professionnalisme et leur engagement envers la satisfaction du client. Ils travaillent en étroite collaboration avec vous, en tant que partenaire de confiance, pour comprendre vos besoins spécifiques et trouver des solutions adaptées à votre entreprise. Leur approche proactive et leur souci du service client font d'eux des experts fiables et dignes de confiance.
+                Lorsque vous faites appel à nos techniciens, vous pouvez avoir l'assurance que vous bénéficiez de l'expertise et de l'engagement nécessaires pour maintenir vos machines en parfait état de fonctionnement et pour optimiser leur performance.
+                Faites confiance à notre équipe de techniciens chevronnés chez MIRA CNC pour tous vos besoins en maintenance et en optimisation de machines. Nous sommes déterminés à vous fournir des professionnels compétents qui vous aideront à atteindre vos objectifs industriels avec excellence.</p>
+        </div>
+    </section>
+    <section class="content">
+        <div class="text">
+            <p>En tant qu'ingénieurs de maintenance de machine, nous avons acquis une solide expérience et des compétences approfondies tout au long de notre carrière professionnelle. Notre parcours professionnel a été jalonné de réalisations significatives et de défis surmontés, contribuant ainsi à l'efficacité et à la fiabilité des équipements industriels.
+                Au début de notre carrière, nous avons commencé en tant que techniciens de maintenance, effectuant des opérations de maintenance préventive et corrective sur diverses machines industrielles. Notre expertise s'est rapidement développée, nous permettant de diagnostiquer efficacement les pannes et d'apporter des solutions rapides et efficaces pour minimiser les temps d'arrêt.
+                En progressant dans notre carrière, nous avons été promus au poste d'ingénieurs de maintenance. Dans ce rôle, nous avons pris en charge la gestion et la coordination d'équipes de maintenance, supervisant les opérations sur le terrain et assurant la planification stratégique des travaux de maintenance. Nous avons également été impliqués dans la mise en œuvre de programmes d'amélioration continue, visant à optimiser la disponibilité et la performance des machines.
+                Au fil du temps, nous avons été exposés à une grande variété de machines et d'équipements industriels, allant des lignes de production automatisées aux systèmes de contrôle et de régulation complexes. Cette diversité nous a permis d'élargir nos connaissances techniques et de nous adapter rapidement aux technologies émergentes.
+                En parallèle de nos tâches de maintenance, nous avons également joué un rôle actif dans la formation et le mentorat des nouveaux techniciens, contribuant ainsi à la transmission des connaissances et à la montée en compétences des membres de l'équipe.
+                Tout au long de notre historique de travail en tant qu'ingénieurs de maintenance de machine, notre passion pour l'innovation, la résolution de problèmes et l'amélioration continue a été une constante. Notre objectif a toujours été d'assurer la disponibilité maximale des machines tout en garantissant la sécurité des opérations et le respect des normes de qualité.
+                Notre parcours professionnel nous a permis d'acquérir une solide compréhension des enjeux de la maintenance industrielle, et nous restons constamment ouverts aux nouvelles opportunités d'apprentissage et de développement professionnel pour continuer à exceller dans ce domaine exigeant et passionnant.
+            </p>
+
+        </div>
+        <div class="image">
+            <img class="image-cercle" src="{{ asset('img/metier-ingenierie.jpg') }}" alt="Image 3">
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<form method="GET" action="{{ path('machine_index') }}" class="mb-4">
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <label for="sortField" class="mr-2">Trier par :</label>
+                <select id="sortField" name="sortField" class="form-control">
+                    <option value="reference">Référence</option>
+                    <option value="annee">Année</option>
+                    <!-- les autres critères de tri -->
+                </select>
+            </div>
+            <div class="col-auto">
+                <label for="sortOrder" class="mr-2">Ordre :</label>
+                <select id="sortOrder" name="sortOrder" class="form-control">
+                    <option value="asc">Ascendant</option>
+                    <option value="desc">Descendant</option>
+                </select>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Trier</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

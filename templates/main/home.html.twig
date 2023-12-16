@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block title %} Mira CNC{% endblock %}
+{% block extrastyles %}
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+{% endblock %}
+{% block body %}
+    <section class="header">
+        <img src="{{ asset('img/MiraCNC.jpg') }}" alt="MiraCNC">
+        <h1>Mira CNC</h1>
+    </section>
+    <section class="content">
+        <div class="text">
+            <p>MIRA CNC, votre partenaire privilégié pour la maintenance et l'optimisation de vos équipements industriels. Avec une expertise reconnue, nous vous offrons une solution globale sur mesure dans les domaines de la machine-outil à commande numérique, de l'automatisme et de la robotique.
+                Notre équipe hautement qualifiée est dédiée à assurer le bon fonctionnement et la performance optimale de vos machines. Que ce soit pour la maintenance préventive, curative ou prédictive, nous intervenons rapidement et efficacement afin de minimiser les temps d'arrêt et d'optimiser la productivité de votre entreprise.
+            </p>
+        </div>
+        <div class="image image-border">
+            <a class="navbar-brand me-2" href={{ path('app_login') }}>
+            <img src="{{ asset('img/maintenance.jpg') }}" class="image-border" alt="Maintenence">
+            </a>
+        </div>
+    </section>
+    <section class="content">
+        <div class="image"> <img src="{{ asset('img/img1.jpeg') }}" class="image-border" alt="Image 3">
+        </div>
+        <div class="text">
+            <p>Chez MIRA CNC, nous comprenons l'importance de la fiabilité et de la précision dans vos opérations industrielles. C'est pourquoi nous mettons à votre disposition des services de pointe, des technologies de pointe et des outils de diagnostic avancés pour garantir la durabilité et la performance de vos équipements.
+                En plus de la maintenance, nous proposons également des services d'optimisation de vos machines, en mettant en place des solutions innovantes pour améliorer leur efficacité énergétique, leur productivité et leur précision. Nous sommes là pour vous accompagner dans l'adoption des dernières avancées technologiques et pour vous aider à rester compétitif sur le marché.
+                Faites confiance à MIRA CNC pour tous vos besoins en matière de maintenance et d'optimisation de machines. Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment nous pouvons vous aider à atteindre vos objectifs industriels avec succès.
+        </div>
+    </section>
+{% endblock %}

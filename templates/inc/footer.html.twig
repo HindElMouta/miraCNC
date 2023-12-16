@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+
+<div class="footer-container">
+<footer class="footer bg-dark text-white full-width">
+    <div class="container-fluid bg-primary text-white">
+        <div class="row">
+            <div class="col-12 text-center">
+                &copy; {{ "now"|date("Y") }} Mira CNC
+                <a class="text-white" href="{{ path('app_main_index') }}"></a>
+            </div>
+            <a class="navbar-brand me-2" href={{ path('app_login') }}>
+                <img
+                        src="{{ asset('img/Logo.png') }}"
+                        height="45px"
+                        alt="MDB Logo"
+                        loading="lazy"
+                        style="margin-top: -1px;">
+            </a>
+        </div>
+    </div>
+</footer>
+</div>

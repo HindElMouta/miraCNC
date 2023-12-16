@@ -1,0 +1,42 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+# Routes pour les machines
+app_machine:
+    path: /machine
+    controller: App\Controller\MachineController::index
+
+machine_index:
+    path: /machine
+    controller: App\Controller\MachineController::index
+
+# Route pour la vue détaillée d'une machine
+machine_show:
+    path: /machine/{id}
+    controller: App\Controller\MachineController::show
+
+# Route pour l'ajout d'une machine
+machine_add:
+    path: /machine/add
+    controller: App\Controller\MachineController::add
+
+# Routes pour l'authentification
+app_login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+app_logout:
+    path: /logout
+    controller: App\Controller\AuthController::logout
+
+
+machine_edit:
+    path: /machine/edit/{id}
+    controller: App\Controller\MachineController::edit
+
+machine_delete:
+    path: /machine/delete/{id}
+    controller: App\Controller\MachineController::delete
+    methods: POST
+

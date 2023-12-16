@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mira CNC{% endblock %}</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><text y='1.2em' font-size='96'>⚫️</text></svg>">
+    <link rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" href="{{ asset('img/Logo.jpeg') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    {% block extrastyles %}{% endblock %}
+</head>
+<body>
+<header>
+    {% include 'inc/nav.html.twig' %}
+</header>
+<main>
+    {% block body %}{% endblock %}
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+
+    {% endblock %}
+</main>
+
+</body>
+{% include 'inc/footer.html.twig' %}
+</html>
